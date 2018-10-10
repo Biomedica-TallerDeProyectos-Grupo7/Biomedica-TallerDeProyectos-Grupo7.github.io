@@ -3,15 +3,26 @@
 		<a href="javascript:void(0)" class="close" id="close-project">
 			<i class="fa fa-times"></i>
 		</a>
-		<h2>Pseudocódigo</h2>
+		<h2>Pseudocódigo para el calibrado en la Interfaz Gráfica</h2>
 		<a target="_blank" href="img/projects/pcode.png">
     			<img src="img/projects/pcode.png" alt="" width="700" height="400">
+			//Esta imagen sacala porfas y pon la img pseudocodigo1
   	</a>
 		<br>
-		<p>El "x" y el "y" son datos obtenidos a traves de la interfaz gráfica.</p>
-		<br><br><p>El "ValorDeEsfuerzo" se obtiene a traves del sensor MyoWare.</p>
+		<p>"x=1023" significa que el Joystick se mueve para la derecha.</p>
+		<br>
+		<p>"x=0" significa que el Joystick se mueve para la izquierda.</p>
+		<br>
+		<p>Así, el doctor puede seleccionar el valor máximo y minimo y guardarlos en la memoria solo moviendo el joystick, durante la evaluación clínica.</p>
+		<br>
+		<p>La condicioón "2<1" siempre será falsa, creando un loop infinito que permite que las señales mioelectricas se lean constantemente durante la evaluacion clínica.</p>
 		<br><br>
-		<p>La condicioón "y>0" siempre será verdadera y por ende crea un loop infinito.</p>
+		<h2>Pseudocódigo para el funcionamiento del dispositivo</h2>
+		<a target="_blank" href="img/projects/pcode.png">
+    			<img src="img/projects/pcode.png" alt="" width="700" height="400">
+			//Esta imagen sacala porfas y pon la img pseudocodigo2
+  	</a>
+		<p>La condicioón "2<1" siempre será falsa, creando un loop infinito que permite que las señales mioelectricas se lean constantemente mientras el paciente ejercita. Así, en todo momento el dispositivo evalúa si el esfuerzo del paciente está dentro de los parámetros y prende el led correspondiente para avisarle.</p>
 		<br><br>
 	</div>
 </div>
