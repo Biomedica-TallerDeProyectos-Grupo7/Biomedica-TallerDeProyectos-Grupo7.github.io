@@ -11,30 +11,30 @@
 		<a target="_blank" href="img/projects/LCD.png">
     			<img src="img/projects/LCD.png" alt="">
   	</a>
-		<p>Para la interfaz gráfica usaremos una pantalla LCD la cual esta unida con un modulo I2C para el ahorro de pines digitales.<br>La pantalla podra ayudar al médico a visualizar cuales son los rangos máximos del paciente si es que asi los requiere.</p>
+		<p>Para la interfaz gráfica usaremos una pantalla LCD la cual esta unida con un modulo I2C para el ahorro de pines digitales.<br>La pantalla facilita el proceso de calibracioón, pues permite que el médico sepa cuando ha seleccionado los parámetros máximo y mínimo de esfuerzo para el paciente.</p>
 		<br><br><br>
 		<h2>Joystick Arduino</h2>
 		<a target="_blank" href="img/projects/joystick.png">
     			<img src="img/projects/joystick.png" alt="">
   	</a>
-		<p>Para poder controlar nuestro dispositivo usaremos un joystick analógico que es un potenciométro, el cual nos ayudara a poder controlar la calibración y uso del prototipo</p>
+		<p>Para poder controlar nuestro dispositivo usaremos un joystick analógico que es un potenciométro, el cual nos ayudara a poder controlar la calibración y uso del prototipo. Durante la calibración, al mover el joystick para arriba se seleccionan los valores de esfuerzo que están siendo medidos en ese instante por el myoware y se "etiquetan" como valores máximos. Por otro lado, al mover el joystick para abajo se seleccionan los valores de esfuerzo que están siendo medidos en ese instante por el myoware y se "etiquetan" como valores mínimos.</p>
 		<br><br><br>
 		<h2>Lector de Tarjeta micro SD</h2>
 		<a target="_blank" href="img/projects/SD.png">
     			<img src="img/projects/SD.png" alt="">
   	</a>
-		<p>Una de las partes más importantes del prototipo, debido a que dentro de la SD se guardara la parte de la configuración del programa, producto de la calibración del sensor.<br>Ayudará a controlar el seguimiento del paciente en su recuperación.</p>
+		<p>Esta es una de las partes más importantes del prototipo debido a que dentro de la SD se guardan los valores elegidos como máximos y mínimos durante la calibración del equipo. De esta forma, estos valores pueden ser usados para avisarle al paciente cuándo está dentro del esfuerzo seguro y cuándo no mientras está haciendo los ejercicios.<br>Ayudará a controlar el seguimiento del paciente en su recuperación.</p>
 		<br><br><br>
 		<h2>Luces LED</h2>
 		<a target="_blank" href="img/projects/leds.png">
     			<img src="img/projects/leds.png" alt="">
   	</a>
-		<p>Las luces LED serviran para poder hacerle saber al paciente si se encuentra dentro de los rango permitidos, previamente establecidos clínicamente por el médico.</p>
+		<p>Las luces LED sirven para poder hacerle saber al paciente si se encuentra dentro del rango de esfuerzo seguro, previamente establecido clínicamente por el médico.</p>
 		<br>
-		<p> Hay de 3 colores:<br>-Verde: Dentro del rango permitido. <br>-Rojo: Sobrepasa el rango máximo permitido, por lo tanto el ejecicio no se esta haciendo correctamente.<br>-Azul: El brazo se encuentra en reposo.</p>
+		<p> Originalmente, solo íbamos a utilizar dos leds: uno de color verde, que indicaba que el paciente estaba trabajando por encima del esfuerzo mínimo para hacer trabajo y por debajo del esfuerzo máximo, a partir del cual hay un riesgo de lesión. El rojo te indicaba que no estabas en ese rango. Sin embargo, nos dimos cuenta haciendo pruebas con el equipo de que esto era muy confuso, ya que el led rojo se prendía cuando estabas haciendo tanto poco esfuerzo como mucho esfuerzo, entonces el usuario no sabía si debía incrementar o disminuir la cantidad de esfuerzo que estaba haciendo. Para resolver este problema, integramos un tercer led, y ahora hay de 3 colores:<br>-Verde: Cantidad segura y adecuada de esfuerzo: sigue así. <br>-Rojo: Demasiado esfuerzo: necesitas esforzarte menos para evitar el riesgo de lesiones.<br>-Azul: Muy poco esfuerzo: necesitas esforzarte más para tener buenos resultados.</p>
 		<br><br>
 		<h3>Códigos de Prueba</h3>
-		<p>Aquí algunos códigos que hemos usado a lo largo de las semanas para ir descubriendo el funcionamiento de cada componente.</p>
+		<p>Aquí adjuntamos algunos códigos que hemos usado a lo largo de las semanas para ir descubriendo el funcionamiento de cada componente.</p>
 		<br>
 		<a target="_blank" href="https://drive.google.com/drive/folders/1LVfCOm1xYb5pt-Tj31K1h6suKvLWJxyW">
 			<h7>TESTS</h7>
