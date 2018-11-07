@@ -3,24 +3,41 @@
 		<a href="javascript:void(0)" class="close" id="close-project">
 			<i class="fa fa-times"></i>
 		</a>
-		<h2>Pseudocódigo para el calibrado en la Interfaz Gráfica</h2>
+		<h1>Componentes del prototipo</h1>
+		<hr>
 		<a target="_blank" href="img/projects/pseudocodigo1.png">
     			<img src="img/projects/pseudocodigo1.png" alt="">
   	</a>
 		<br>
-		<p>"x=1023" significa que el Joystick se mueve para la derecha.</p>
-		<br>
-		<p>"x=0" significa que el Joystick se mueve para la izquierda.</p>
-		<br>
-		<p>Así, el doctor puede seleccionar el valor máximo y minimo y guardarlos en la memoria solo moviendo el joystick, durante la evaluación clínica.</p>
-		<br>
-		<p>La condicioón "2<1" siempre será falsa, creando un loop infinito que permite que las señales mioelectricas se lean constantemente durante la evaluacion clínica.</p>
-		<br><br>
-		<h2>Pseudocódigo para el funcionamiento del dispositivo</h2>
-		<a target="_blank" href="img/projects/pseudocodigo2.png">
-    			<img src="img/projects/pseudocodigo2.png" alt="">
+		<h2>Pantalla LCD 16X4</h2>
+		<a target="_blank" href="img/projects/LCD.png">
+    			<img src="img/projects/LCD.png" alt="">
   	</a>
-		<p>La condicioón "2<1" siempre será falsa, creando un loop infinito que permite que las señales mioelectricas se lean constantemente mientras el paciente ejercita. Así, en todo momento el dispositivo evalúa si el esfuerzo del paciente está dentro de los parámetros y prende el led correspondiente para avisarle.</p>
-		<br><br>
+		<p>Para la interfaz gráfica usaremos una pantalla LCD la cual esta unida con un modulo I2C para el ahorro de pines digitales.<br>La pantalla podra ayudar al médico a visualizar cuales son los rangos máximos del paciente si es que asi los requiere.</p>
+		<h2>Joystick Arduino</h2>
+		<a target="_blank" href="img/projects/joystick.png">
+    			<img src="img/projects/joystick.png" alt="">
+  	</a>
+		<p>Para poder controlar nuestro dispositivo usaremos un joystick analógico que es un potenciométro, el cual nos ayudara a poder controlar la calibración y uso del prototipo</p>
+		
+		<h2>Lector de Tarjeta micro SD</h2>
+		<a target="_blank" href="img/projects/SD.png">
+    			<img src="img/projects/SD.png" alt="">
+  	</a>
+		<p>Una de las partes más importantes del prototipo, debido a que dentro de la SD se guardara la parte de la configuración del programa, producto de la calibración del sensor.<br>Ayudará a controlar el seguimiento del paciente en su recuperación.</p>
+		<h2>Luces LED</h2>
+		<a target="_blank" href="img/projects/leds.png">
+    			<img src="img/projects/leds.png" alt="">
+  	</a>
+		<p>Las luces LED serviran para poder hacerle saber al paciente si se encuentra dentro de los rango permitidos, previamente establecidos clínicamente por el médico.</p>
+		<br>
+		<p> Hay de 3 colores:<br>-Verde: Dentro del rango permitido. <br>-Rojo: Sobrepasa el rango máximo permitido, por lo tanto el ejecicio no se esta haciendo correctamente.<br>-Azul: El brazo se encuentra en reposo.</p>
+		<br>
+		<h3>Códigos de Prueba</h3>
+		<p>Aquí algunos códigos que hemos usado a lo largo de las semanas para ir descubriendo el funcionamiento de cada componente.</p>
+		<a target="_blank" href="https://drive.google.com/drive/folders/1LVfCOm1xYb5pt-Tj31K1h6suKvLWJxyW">
+    			<img src="img/projects/codigo.png" alt="">
+  	</a>
+		
 	</div>
 </div>
